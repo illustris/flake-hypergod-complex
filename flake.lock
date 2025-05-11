@@ -1,0 +1,103 @@
+{
+  "nodes": {
+    "debBundler": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746317543,
+        "narHash": "sha256-1Xph5g1Lazzkc9XuY1nOkG5Fn7+lmSdldAC91boDawY=",
+        "owner": "illustris",
+        "repo": "flake",
+        "rev": "e86bd104d76d22b2ba36fede405e7bff290ef489",
+        "type": "github"
+      },
+      "original": {
+        "owner": "illustris",
+        "repo": "flake",
+        "type": "github"
+      }
+    },
+    "nix-install": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1746914191,
+        "narHash": "sha256-zd4kyXNqTHPm+mWLm3uNlk3vHilzHLbunJIO5fqTRoE=",
+        "owner": "danielrolls",
+        "repo": "nix-install",
+        "rev": "c758bb3b0670c01d75f34c9c186e7b5a98a88afd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "danielrolls",
+        "repo": "nix-install",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1746663147,
+        "narHash": "sha256-Ua0drDHawlzNqJnclTJGf87dBmaO/tn7iZ+TCkTRpRc=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "dda3dcd3fe03e991015e9a74b22d35950f264a54",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "pvemon": {
+      "inputs": {
+        "debBundler": "debBundler",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1746921525,
+        "narHash": "sha256-mpMrUBXXzpqjhWR0t7ZNClD70PBgvGx2WUMKqJsvdTc=",
+        "owner": "illustris",
+        "repo": "pvemon",
+        "rev": "bd955e806794a70b0fe86ec0f6806bad876472eb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "illustris",
+        "repo": "pvemon",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nix-install": "nix-install",
+        "nixpkgs": "nixpkgs",
+        "pvemon": "pvemon",
+        "system-manager": "system-manager"
+      }
+    },
+    "system-manager": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1744139528,
+        "narHash": "sha256-ABIcmxzf8399pJzXqHzShXtzw7iC+zxjhOxp/qS0fQk=",
+        "owner": "numtide",
+        "repo": "system-manager",
+        "rev": "803322102ed51f29c250d4bff2973625adc4a521",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "system-manager",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
